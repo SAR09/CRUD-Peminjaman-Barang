@@ -18,6 +18,7 @@
               <th>NO</th>
               <th>Nama</th>
               <th>JENIS BARANG</th>
+              <th>NO TELEPON</th>
               <th>TANGGAL PINJAM</th>
               <th>TANGGAL PENGEMBALIAN</th> 
               <th>AKSI</th>
@@ -28,6 +29,7 @@
                   <th>{{$no+1}}</th>
                   <td>{{$hasil->nama}}</td>
                   <td>{{$hasil->jenisbarang}}</td>
+                  <td>{{$hasil->nohp}}</td>
                   <td>{{$hasil->tglpinjaman}}</td>
                   <td>{{$hasil->tglkembali}}</td>
                   <td>

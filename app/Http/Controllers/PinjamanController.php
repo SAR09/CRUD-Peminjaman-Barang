@@ -40,6 +40,7 @@ class PinjamanController extends Controller
         $request->validate([
             'nama' => 'required',
             'jenisbarang' => 'required',
+            'nohp' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:11',
             'tglpinjaman' => 'required',
             'tglkembali' => 'required',
         ]);
@@ -47,6 +48,7 @@ class PinjamanController extends Controller
         $pinjaman = new Pinjaman;
         $pinjaman->nama = $request->nama;
         $pinjaman->jenisbarang = $request->jenisbarang;
+        $pinjaman->nohp = $request->nohp;
         $pinjaman->tglpinjaman = $request->tglpinjaman;
         $pinjaman->tglkembali = $request->tglkembali;
         $pinjaman->save();
@@ -95,6 +97,7 @@ class PinjamanController extends Controller
         $request->validate([
             'nama' => 'required',
             'jenisbarang' => 'required',
+            'nohp' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
             'tglpinjaman' => 'required',
             'tglkembali' => 'required',
         ]);
@@ -102,6 +105,7 @@ class PinjamanController extends Controller
         $pinjaman = Pinjaman::find($id);
         $pinjaman->nama = $request->nama;
         $pinjaman->jenisbarang = $request->jenisbarang;
+        $pinjaman->nohp = $request->nohp;
         $pinjaman->tglpinjaman = $request->tglpinjaman;
         $pinjaman->tglkembali = $request->tglkembali;
         $pinjaman->save();

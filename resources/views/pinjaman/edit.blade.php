@@ -36,6 +36,10 @@
                 <input type="text" class="form-control" name="jenisbarang" value="{{$pinjaman->jenisbarang}}" id="jenisbarang" placeholder="Jenis Barang">
             </div>
             <div class="mb-3">
+                <label for="nohp" class="form-label">No Telepon</label>
+                <input type="text" class="form-control" name="nohp" value="{{$pinjaman->nohp}}" id="nohp" placeholder="Nomor Telepon">
+            </div>
+            <div class="mb-3">
              <label for="tglpinjam" class="col-form-label" >Tanggal Peminjaman</label>
              <input type="datetime-local" class="form-control" name="tglpinjaman" value="{{$pinjaman->tglpinjaman}}">
             </div>

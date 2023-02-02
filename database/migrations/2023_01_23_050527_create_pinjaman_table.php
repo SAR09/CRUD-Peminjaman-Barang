@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->string('jenisbarang');
+            $table->string('nohp');
             $table->dateTime('tglpinjaman')->nullable();
             $table->dateTime('tglkembali')->nullable();
             $table->timestamps();

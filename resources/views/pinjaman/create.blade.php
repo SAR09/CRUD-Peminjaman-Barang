@@ -35,6 +35,10 @@
                 <input type="text" class="form-control" name="jenisbarang" id="jenisbarang" placeholder="Jenis Barang">
             </div>
             <div class="mb-3">
+                <label for="nohp" class="form-label">No Telepon</label>
+                <input type="text" class="form-control" name="nohp" id="nohp" placeholder="No Telepon">
+            </div>
+            <div class="mb-3">
              <label for="tglpinjam" class="col-form-label" >Tanggal Peminjaman</label>
              <input type="datetime-local" class="form-control" name="tglpinjaman">
             </div>
